@@ -37,7 +37,7 @@ class Agent:
 class WeatherAgent(Agent):
     def __init__(self, ):
         super().__init__()
-        self.weather_api_key = os.getenv("WEATHER_API_KEY")
+        self.weather_api_key = os.getenv("OPENWEATHER_API_KEY")
         self.messages = [{"role": "system", "content": self.initialize_system_message()}]
     
     @staticmethod
